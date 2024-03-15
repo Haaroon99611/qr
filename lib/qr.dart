@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:registration/camera.dart';
 import 'package:registration/login.dart';
 
 class Qr extends StatefulWidget {
@@ -37,8 +38,8 @@ class _QrState extends State<Qr> {
                 height: 50,
               ),
               ElevatedButton(onPressed:() {
-                Navigator.push(context,MaterialPageRoute(builder: (context)=> Log()));
-              }, child: Text('Sign Out',style: TextStyle(color: Colors.black),),
+                Navigator.push(context,MaterialPageRoute(builder: (context)=> Cam()));
+              }, child: Text('Scan',style: TextStyle(color: Colors.black),),
                 style: TextButton.styleFrom(backgroundColor: Colors.white),
               )
             ],
