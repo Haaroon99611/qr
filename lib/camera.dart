@@ -40,7 +40,7 @@ class _CamState extends State<Cam> {
                 height: 400,
               ),
               ElevatedButton(onPressed:() {
-                Navigator.push(context,MaterialPageRoute(builder: (context)=> ()));
+                Navigator.push(context,MaterialPageRoute(builder: (context)=> Profile()));
               }, child: Text('Scan',style: TextStyle(color: Colors.black),),
                 style: TextButton.styleFrom(backgroundColor: Colors.white),
               ),
